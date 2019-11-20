@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="4dp"
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/newsp"
+                android:layout_gravity="top|right"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </ImageView>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageviewsanpham"/>
+                <TextView
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="Tên sản phẩm"
+                    android:textColor="#101010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textviewtensanpham"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textviewgiasanpham"
+                    android:textSize="17sp"
+                    android:textColor="#f20"
+                    android:text="Gía sản phẩm"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
